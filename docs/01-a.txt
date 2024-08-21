@@ -1,1 +1,6 @@
-Hola Hola
+Las siglas mencionadas representan softwares utilizados para gestionar y optimizar procesos empresariales:
+CRM (Customer Relationship Management): Gestión de relaciones con el cliente, enfocada en administrar y analizar interacciones con clientes. Ejemplo: Salesforce.
+ERP (Enterprise Resource Planning): Planificación de recursos empresariales, ayuda a coordinar operaciones y recursos como contabilidad y gestión de proyectos. Ejemplo: Oracle ERP Cloud.
+GRP (Government Resource Planning): Similar al ERP, pero diseñado para el sector público.
+MRP (Material Requirements Planning): Planificación de requerimientos de materiales para gestionar la producción, asegurar disponibilidad de materiales y maximizar eficiencia. Ejemplo: SAP MRP.
+SCM (Supply Chain Management): Gestión de la cadena de suministro, optimiza el flujo de productos e información desde el proveedor hasta el cliente, mejorando logística, inventarios y distribución. Ejemplos: Oracle, SAP.
