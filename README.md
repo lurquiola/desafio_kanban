@@ -4,5 +4,10 @@ Mi nombre es Lucía Urquiola, soy Licenciada en Ingeniería Biológica con un pe
 
 En este repositorio se adjuntan cada una de las partes del desafío propuesto, siguiendo la siguiente estructura:
 
-01 - [Parte 1 del desafío](docs/)
-02 - 
+La primera sección del desafío corresponde a una investigación de conceptos fundamentales para el cargo. 
+A continuación se muestran las preguntas planteadas enlazadas a la respuesta.
+01 - [En el ámbito de las aplicaciones de negocio, qué significan las siglas:  CRM, ERP, GRP, MRP, SCM. Qué resuelven estas aplicaciones, ejemplos de algunos con su alcance.
+](docs/01-a.txt)
+02 - [En el ámbito del desarrollo de software, indique para qué se utilizan y/o a qué hacen referencia las siglas:  HTML, XML, CSV, JSON, YAML.](docs/01-b.txt)
+03 - [¿Qué son Web Services?  ¿En qué se diferencia una API REST de un SOAP Server?](docs/01-c.txt)
+04 - [A qué hace referencia el Patrón de Arquitectura de Diseño de Software conocido como Modelo Vista Controlador (MVC). ¿Cuál es su utilidad?](docs/01-d.txt)
