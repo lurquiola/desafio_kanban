@@ -1,1 +1,11 @@
 01-c.
+Un Web Service permite la comunicación y el intercambio de datos entre diferentes aplicaciones a través de la red,
+independientemente de las plataformas o lenguajes de programación utilizados.
+
+SOAP es un protocolo rígido que utiliza exclusivamente XML para sus mensajes y es adecuado para aplicaciones que 
+requieren transacciones seguras y complejas, aunque es más lento debido al tamaño de sus mensajes.
+
+REST, en cambio, es un estilo arquitectónico más flexible y rápido, que soporta diversos formatos de datos como 
+JSON, XML, y texto plano, aprovechando el protocolo HTTP y el almacenamiento en caché para mejorar el rendimiento.
+Mientras SOAP es stateful y ofrece una seguridad robusta, REST es stateless y se utiliza en aplicaciones web y 
+móviles donde la velocidad es clave.
