@@ -17,3 +17,16 @@ A continuación se muestran las preguntas planteadas enlazadas a la respuesta.
 01.d - [A qué hace referencia el Patrón de Arquitectura de Diseño de Software conocido como Modelo Vista Controlador (MVC). ¿Cuál es su utilidad?](docs/01-d.txt)
 
 La segunda sección del desafío corresponde a la creación de este repositorio siguiendo buenas prácticas en el desarrollo colaborativo.
+
+La tercera sección del desafío se encuentra en la carpeta ["sql"](sql/). La misma contiene dos archivos pdf, uno con cada parte del desafío de consultas estructuradas.
+
+La cuarta sección del desafío se encuentra en la carpeta ["python"](python/). La misma tiene una carpeta app, una carpeta models y data. 
+La carpeta app y models fueron dadas en el desafío, la carpeta data se agregó para guardar ahí los CSV a partir del cual se ingresan los datos en el programa.
+La carpeta models se modificó y se hizo para cada clase un archivo python donde se definen. Estas clases son funcionario, recibo_sueldo y detalle_recibo.
+La clase recibo_sueldo esta relacionada tanto con la clase funcionario (a través de id_funcionario) y de detalle_recibo (a través de id_detalle).
+
+Se creó un archivo main el cual despliega un menú de opciones, y el cual puede usarse para cargar datos en la base de datos referente a funcionarios, recibos y detalles a partir de CSVs, 
+se puede actualizar la información de nombre y cargo de un funcionario a partir de su cédula de identidad, y se puede eliminar todos los recibos asociados a un funcionario a partir de su
+cédula. 
+
+Toda la funcionalidad se desarrollo en un archivo llamado utils.py. Allí se encuentran funciones para ingresar datos de cada una de las clases a partir de CSVs, los de actualizar, eliminar, y consultar datos de la base de datos.
