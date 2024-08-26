@@ -5,19 +5,13 @@ from utils import load_funcionarios_from_csv, load_recibos_from_csv, load_detall
 
 Funcionario = app.env['funcionarios']
 Recibos = app.env['recibos_sueldo']
-"""
-
 load_funcionarios_from_csv("data/cargar_funcionarios.csv", Funcionario)
-
 Detalle = app.env['detalle_recibo']
 load_detalle_recibo_from_csv("data/cargar_detalles.csv", Detalle)
-
 Recibos = app.env['recibos_sueldo']
 load_recibos_from_csv("data/cargar_recibos.csv", Recibos)
-"""
 
 # Con esto busco el ID del funcionario con esta cedula
-
 todos_los_funcionarios = Funcionario.records()
 
 #pedir input CI

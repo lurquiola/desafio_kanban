@@ -93,8 +93,14 @@ class Model:
     db[self._table].remove(self.read())
     update_database(db)
     self.id = False
+    #for colname, coldefinition in self._columns.items():
+    #  setattr(self, colname, None)
+
+    # Asigna 'None' solo a columnas que no tienen restricciones de valores permitidos
     for colname, coldefinition in self._columns.items():
-      setattr(self, colname, None)
+        # Solo asigna 'None' si no hay valores permitidos
+        if not hasattr(coldefinition, 'allowed_values'):
+            setattr(self, colname, None)
 
   @classmethod
   def browse(self, recids: int | List[int] = []):
