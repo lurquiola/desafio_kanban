@@ -1,0 +1,12 @@
+En el desarrollo de software, estas siglas representan lenguajes o formatos para estructurar, almacenar y transmitir datos:
+
+HTML (HyperText Markup Language): Lenguaje de marcado para crear y definir la estructura de páginas web, incluyendo elementos como títulos, imágenes y enlaces. Se usa junto con CSS y JavaScript para diseño y funcionalidad.
+
+XML (eXtensible Markup Language): Lenguaje de marcado para almacenar datos en un formato legible por humanos y máquinas, utilizando etiquetas para estructurar la información.
+
+CSV (Comma-Separated Values): Formato de texto plano para almacenar datos tabulares, donde cada línea es un registro con valores separados por comas. Es muy usado para importar y exportar datos en hojas de cálculo y bases de datos.
+
+JSON (JavaScript Object Notation): Formato de texto simple para el intercambio de datos, utilizado principalmente en sitios web, aplicaciones móviles y programas para facilitar la transmisión y almacenamiento de datos.
+
+YAML (YAML Ain't Markup Language): Formato de texto legible por humanos para serializar datos, usado para configuraciones y almacenamiento de información de manera fácil de leer y escribir.
+
