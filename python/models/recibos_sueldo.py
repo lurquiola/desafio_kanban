@@ -11,7 +11,7 @@ class RecibosSueldo(models.Model):
   # columnas de la tabla (la columna ID es implicita)
   _columns = {
     'anio_mes': columns.VarChar('anio_mes', size=7),  # Ejemplo de formato 'YYYY-MM'
-    'tipo_recibo': columns.VarChar('tipo_recibo', allowed_values=['vacaciones', 'aguinaldo', 'licencia']),
+    'tipo_recibo': columns.VarChar('tipo_recibo', allowed_values=['sueldo', 'aguinaldo', 'licencia']),
     'id_funcionario': columns.Relation('id', funcionarios.Funcionarios), 
     'nombre_empleador': columns.VarChar('nombre_empleador'),
     'detalle_recibo_id': columns.Relation('detalle_recibo_id', detalle_recibo.DetalleRecibo)

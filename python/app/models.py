@@ -76,16 +76,6 @@ class Model:
   def read(self, columns: List[str]=[]):
     return {colname:self._columns[colname]._type(getattr(self, colname)) if self._columns.get(colname) else getattr(self, colname) for colname in (columns or list(self._columns.keys()))+['id']}
 
-  # def read(self, columns: List[str] = None):
-  #   return {
-  #       colname: (
-  #           self._columns[colname]._type(getattr(self, colname)) 
-  #           if self._columns.get(colname) and getattr(self, colname) is not None 
-  #           else getattr(self, colname)
-  #       )
-  #       for colname in (columns or list(self._columns.keys())) + ['id']
-  #   }
-  
   def update(self, values: Dict[str, Any]={}):
     if self.id:
       self._prevent_setattr_db_update = True

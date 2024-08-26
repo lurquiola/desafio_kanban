@@ -42,3 +42,23 @@ def load_detalle_recibo_from_csv(file_path, DetalleRecibo):
                 'cantidad': int(row['cantidad']),
                 'monto': int(row['monto'])
             })
+
+# Le paso una cedula y si esta en la base de datos me da 
+# el id del funcionario para buscar en la tabla de recibos
+# sino devuelve none y se debe de pedir una cedula valida
+def get_funcionario_id_by_cedula(cedula: int, funcionario) -> int:
+    for f in funcionario:
+        if f.cedula == cedula:
+            return f.id
+    return None
+
+def get_recibos_by_funcionario_id(funcionario_id: int, recibos):
+    recibos_filtrados = []
+    for recibo in recibos:
+        recibo_data = recibo.read()
+        # Verifica si el `id_funcionario` en el recibo coincide con el ID del funcionario proporcionado
+        if recibo_data['id_funcionario'] == funcionario_id:
+            # Si coincide, agrega el recibo a la lista de recibos filtrados
+            recibos_filtrados.append(recibo)
+    
+    return recibos_filtrados
