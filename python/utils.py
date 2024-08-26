@@ -1,4 +1,5 @@
 import csv
+import app
 
 def load_funcionarios_from_csv(file_path, funcionarios):
     with open(file_path, mode='r') as file:
@@ -62,3 +63,52 @@ def get_recibos_by_funcionario_id(funcionario_id: int, recibos):
             recibos_filtrados.append(recibo)
     
     return recibos_filtrados
+
+def cargar_base_de_datos():
+    Funcionario = app.env['funcionarios']
+    load_funcionarios_from_csv("data/cargar_funcionarios.csv", Funcionario)
+
+    Detalle = app.env['detalle_recibo']
+    load_detalle_recibo_from_csv("data/cargar_detalles.csv", Detalle)
+
+    Recibos = app.env['recibos_sueldo']
+    load_recibos_from_csv("data/cargar_recibos.csv", Recibos)
+
+def eliminar_recibos():
+    Funcionario = app.env['funcionarios']
+    Recibos = app.env['recibos_sueldo']
+
+    # listo todos los funcionarios
+    todos_los_funcionarios = Funcionario.records()
+    ci = int(input("Escriba CI del funcionario que se quiere eliminar los recibos: "))
+    # Con esto busco el ID del funcionario con esta cedula
+    id = get_funcionario_id_by_cedula(ci, todos_los_funcionarios)
+    if id == None:
+        print("Cedula invalida, intente de nuevo.")
+    else:
+        todos_los_recibos = Recibos.records()
+        recibos_a_borrar = get_recibos_by_funcionario_id(id, todos_los_recibos)
+        for elem in recibos_a_borrar:
+            print("aca ", type(elem))
+            elem.delete()
+
+def actualizar_datos_funcionario():
+    cedula = int(input("Ingresar cedula de identidad del funcionario que se quiere actualizar la informacion:"))
+    nuevo_nombre = input("Ingresar actualizacion de nombre:")
+    nuevo_cargo = input("Ingresar actualizacion de cargo:")
+
+    Funcionarios = app.env['funcionarios']
+    funcionarios = Funcionarios.records()
+    aActualizar = None
+
+    for funcionario in funcionarios:
+        if funcionario.cedula == cedula:
+            aActualizar = funcionario
+
+        if aActualizar != None:
+            aActualizar.update({
+                'nombre': nuevo_nombre,
+                'cargo': nuevo_cargo
+            })
+        else:
+            print("Cedula invalida. No existe registro en la base de datos con esa cedula.")
