@@ -17,4 +17,3 @@ A continuación se muestran las preguntas planteadas enlazadas a la respuesta.
 01.d - [A qué hace referencia el Patrón de Arquitectura de Diseño de Software conocido como Modelo Vista Controlador (MVC). ¿Cuál es su utilidad?](docs/01-d.txt)
 
 La segunda sección del desafío corresponde a la creación de este repositorio siguiendo buenas prácticas en el desarrollo colaborativo.
-Además de crear el repositorio siguiendo la estructura sugerida creé una guía con conceptos importantes de la sección y el paso a paso seguido para la creación. Se adjunta también esta guía.
