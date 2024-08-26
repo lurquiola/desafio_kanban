@@ -27,4 +27,4 @@ La carpeta models se modificó y se hizo para cada nueva clase un archivo python
 
 Se creó un archivo main el cual despliega un menú de opciones, y el cual puede usarse para cargar datos en la base de datos referente a funcionarios, recibos y detalles a partir de CSVs, se puede actualizar la información de nombre y cargo de un funcionario a partir de su cédula de identidad, y se puede eliminar todos los recibos asociados a un funcionario a partir de su cédula. 
 
-Toda la funcionalidad se desarrollo en un archivo llamado utils.py. Allí se encuentran funciones para ingresar datos de cada una de las clases a partir de CSVs, los de actualizar, eliminar, y consultar datos de la base de datos.
+Toda la funcionalidad se desarrollo en un archivo llamado utils.py. Allí se encuentran funciones para ingresar, actualizar, eliminar y consultar la base de datos.
