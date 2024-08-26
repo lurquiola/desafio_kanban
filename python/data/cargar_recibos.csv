@@ -1,0 +1,4 @@
+anio_mes,tipo_recibo,id,nombre_empleador,detalle_recibo_id
+2024-07,sueldo,1,Kanban,1
+2024-07,aguinaldo,2,Competencia1,2
+2024-08,licencia,3,Competencia2,3
